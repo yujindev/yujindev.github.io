@@ -1,93 +1,13 @@
 [
   
   {
-    "title"    : "Sample post",
-    "category" : "",
-    "tags"     : " A Tag, Test, Lorem, Ipsum",
-    "url"      : "/2019/06/30/sample-post.html",
-    "date"     : "June 30, 2019",
-    "excerpt"  : "Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. \nPraesent et diam eget libero egestas mattis sit amet vitae augue. Nam tinci...",
-  "content"  : "Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. \nPraesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. \n\nDonec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.\n\n\n  Consectetur adipiscing elit\n  Donec a diam lectus\n  Sed sit amet ipsum mauris\n\n\nUt turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.\n\nNunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum.\n\n\n\nUt dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.\n\n\n  Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque\n\n\nEtiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt.\n\nPhasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.\n"
-} ,
-  
-  {
-    "title"    : "Color Post",
-    "category" : "",
-    "tags"     : " Test, Color, Markdown",
-    "url"      : "/2019/05/18/color-post.html",
-    "date"     : "May 18, 2019",
-    "excerpt"  : "What a colorful post!\n\nThis is an idea that came from xukimseven/HardCandy-Jekyll \nlooking at this cheerful and colorful them, I wanted to enable something similar for mine.\n\nYou can go fork and star hers too! 😉\n\n\n\nHow does it work?\n\nBasically you...",
-  "content"  : "What a colorful post!\n\nThis is an idea that came from xukimseven/HardCandy-Jekyll \nlooking at this cheerful and colorful them, I wanted to enable something similar for mine.\n\nYou can go fork and star hers too! 😉\n\n\n\nHow does it work?\n\nBasically you need to add just one thing, the color:\n\n---\nlayout: post\ntitle: Color Post\ncolor: brown\n---\n\n\nIt can either be a html color like brown (which look like red to me). Or with the rgb:\n\n---\nlayout: post\ntitle: Color Post\ncolor: rgb(165,42,42)\n---\n\n\nThe background used is lineart.png from xukimseven you can edit it in the config file. \nIf you want another one, put it in /assets/img as well.\n\n  ⚠️ It’s a bit hacking the css in the post.html\n\n"
-} ,
-  
-  {
-    "title"    : "Feature images",
-    "category" : "",
-    "tags"     : " Test, Lorem",
-    "url"      : "/2014/11/29/feature-images.html",
-    "date"     : "November 29, 2014",
-    "excerpt"  : "This is an example of a post which includes a feature image specified in the front matter of the post. \nThe feature image spans the full-width of the page, and is shown with the title on permalink pages:\n\nfeature-img: &quot;assets/img/pexels/desk-messy...",
-  "content"  : "This is an example of a post which includes a feature image specified in the front matter of the post. \nThe feature image spans the full-width of the page, and is shown with the title on permalink pages:\n\nfeature-img: &quot;assets/img/pexels/desk-messy.jpeg&quot;\n\n\n\n  \n    And now it is working\n  \n\n\nYou can also add images aligned in your post using the aligner include.\nMake sure to separate all of the image path from in a string separated with ,.\nIt by default look into assets/img/ so give the path from there, example:\n\n{% include aligner.html images=&quot;pexels/book-glass.jpeg,triangle.png&quot; %}\n\n\n    \n    \n        \n    \n    \n    \n        \n    \n    \n\n\nHere you have two images side by side, but you can set more and set the amount per columns \n(by specifying the number of columns or let it be automatic using &quot;auto&quot;):\n\n{% include aligner.html images=&quot;portfolio/cabin.png,portfolio/cake.png,portfolio/circus.png&quot; column=3 %}\n\n\n    \n    \n        \n    \n    \n    \n        \n    \n    \n    \n        \n    \n    \n\n\n"
-} ,
-  
-  {
-    "title"    : "Markdown and HTML",
-    "category" : "",
-    "tags"     : " Test, Markdown",
-    "url"      : "/2014/11/28/markdown-and-html.html",
-    "date"     : "November 28, 2014",
-    "excerpt"  : "Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.\n\nTables have also been extended from Ma...",
-  "content"  : "Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.\n\nTables have also been extended from Markdown:\n\n\n  \n    \n      First Header\n      Second Header\n    \n  \n  \n    \n      Content Cell\n      Content Cell\n    \n    \n      Content Cell\n      Content Cell\n    \n  \n\n\nHere’s an example of an image, which is included using Markdown:\n\n\n\nHighlighting for code in Jekyll is done using Base16 or Rouge. This theme makes use of Rouge by default.\n\n// count to ten\nfor (var i = 1; i &amp;lt;= 10; i++) {\n    console.log(i);\n}\n\n// count to twenty\nvar j = 0;\nwhile (j &amp;lt; 20) {\n    j++;\n    console.log(j);\n}\n\nType on Strap uses KaTeX to display maths. Equations such as \\(S_n = a \\times \\frac{1-r^n}{1-r}\\) can be displayed inline.\n\nAlternatively, they can be shown on a new line:\n\n\\[f(x) = \\int \\frac{2x^2+4x+6}{x-2}\\]\n"
-} ,
-  
-  {
-    "title"    : "What&#39;s your title",
-    "category" : "",
-    "tags"     : " Test, Lorem",
-    "url"      : "/2014/11/27/whats-your-title.html",
-    "date"     : "November 27, 2014",
-    "excerpt"  : "This is an example of a post which includes a feature image that has a\ntext, where you don’t want to redisplay the title.\n\nWe cannot simply set the title to the empty string, as that would\nbreak pages that list this post, such as home and tags.\n\n",
-  "content"  : "This is an example of a post which includes a feature image that has a\ntext, where you don’t want to redisplay the title.\n\nWe cannot simply set the title to the empty string, as that would\nbreak pages that list this post, such as home and tags.\n\n"
-} ,
-  
-  {
-    "title"    : "Markup: Syntax Highlighting",
-    "category" : "",
-    "tags"     : " code",
-    "url"      : "/2014/08/08/Markup-Syntax-Highlighting.html",
-    "date"     : "August 8, 2014",
-    "excerpt"  : "From Michael’s Rose Minimal Mistakes.\nSyntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming lan...",
-  "content"  : "From Michael’s Rose Minimal Mistakes.\nSyntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. Highlighting does not affect the meaning of the text itself; it is intended only for human readers.\n\nGFM Code Blocks\n\nGitHub Flavored Markdown fenced code blocks are supported. To modify styling and highlight colors edit /_sass/syntax.scss.\n\n#container {\n  float: left;\n  margin: 0 -240px 0 0;\n  width: 100%;\n}\n\n\n1\n2\n3\n4\n5\n6\n7\n.highlight {\n  margin: 0;\n  padding: 1em;\n  font-family: $monospace;\n  font-size: $type-size-7;\n  line-height: 1.8;\n}\n\n\n&amp;lt;nav class=&quot;pagination&quot; role=&quot;navigation&quot;&amp;gt;\n  {% if page.previous %}\n    &amp;lt;a href=&quot;{{ site.url }}{{ page.previous.url }}&quot; class=&quot;btn&quot; title=&quot;{{ page.previous.title }}&quot;&amp;gt;Previous article&amp;lt;/a&amp;gt;\n  {% endif %}\n  {% if page.next %}\n    &amp;lt;a href=&quot;{{ site.url }}{{ page.next.url }}&quot; class=&quot;btn&quot; title=&quot;{{ page.next.title }}&quot;&amp;gt;Next article&amp;lt;/a&amp;gt;\n  {% endif %}\n&amp;lt;/nav&amp;gt;&amp;lt;!-- /.pagination --&amp;gt;\n\n\nmodule Jekyll\n  class TagIndex &amp;lt; Page\n    def initialize(site, base, dir, tag)\n      @site = site\n      @base = base\n      @dir = dir\n      @name = &#39;index.html&#39;\n      self.process(@name)\n      self.read_yaml(File.join(base, &#39;_layouts&#39;), &#39;tag_index.html&#39;)\n      self.data[&#39;tag&#39;] = tag\n      tag_title_prefix = site.config[&#39;tag_title_prefix&#39;] || &#39;Tagged: &#39;\n      tag_title_suffix = site.config[&#39;tag_title_suffix&#39;] || &#39;&amp;amp;#8211;&#39;\n      self.data[&#39;title&#39;] = &quot;#{tag_title_prefix}#{tag}&quot;\n      self.data[&#39;description&#39;] = &quot;An archive of posts tagged #{tag}.&quot;\n    end\n  end\nend\n\n\nCode Blocks in Lists\n\nIndentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., 1.). Usually this will mean indenting 3 spaces instead of 4.\n\n\n  Do step 1.\n  \n    Now do this:\n\n    def print_hi(name)\n  puts &quot;Hi, #{name}&quot;\nend\nprint_hi(&#39;Tom&#39;)\n#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.\n    \n  \n  Now you can do this.\n\n\nGitHub Gist Embed\n\nAn example of a Gist embed below.\n\n\n\nSource\n\n"
-} ,
-  
-  {
-    "title"    : "Generate a table of content",
-    "category" : "",
-    "tags"     : " toc.js, kramdown, Markdown, Customization",
-    "url"      : "/2013/12/12/Generate-a-table-of-content.html",
-    "date"     : "December 12, 2013",
-    "excerpt"  : "Test article, get the source on github.\n\nUsing Kramdown GFM \n\n\n\n  Using Kramdown GFM     \n      Basic Usage\n    \n  \n  Using toc.js    \n      Customize with toc.js        \n          Use with this jekyll template\n        \n      \n      Basic Usage\n  ...",
-  "content"  : "Test article, get the source on github.\n\nUsing Kramdown GFM \n\n\n\n  Using Kramdown GFM     \n      Basic Usage\n    \n  \n  Using toc.js    \n      Customize with toc.js        \n          Use with this jekyll template\n        \n      \n      Basic Usage\n      How it would look like\n    \n  \n\n\nBasic Usage\n\nYou need to put this at the beginning of the page where you want the table of content to be displayed\n\n* TOC\n{:toc}\n\n\nIt will then render the markdown and html titles (lines that begins with # or using the &amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt; tages)\n\nUsing toc.js\n\nDemo display of jekyll-table-of-contents by ghiculescu.\n\n\n\n\nCustomize with toc.js\n\ntoc.js stands for table of content, it is a js plugin that generates automatically a table of content of a post.\n\nUse with this jekyll template\n\nIf you want to customize the theme it is up to you, you can add the toc.js file into the asset &amp;gt; js and add it into the page.html layout with:\n\n&amp;lt;script src=&quot;/assets/js/toc.js&quot; &amp;gt;&amp;lt;/script&amp;gt;\n\nThen you can use it as it is said on the repository.\n\nBasic Usage\n\nThe script requires jQuery. First, reference toc.js in templates where you would like to add the table of content. Then, create an HTML element wherever you want your table of contents to appear:\n\n&amp;lt;div id=&quot;toc&quot;&amp;gt;&amp;lt;/div&amp;gt;\n\n\nThen you put your post with titles and all like:\n\n## Title\n## Mid title 1\nThis is text on page one\n## Mid title 2\nThis is text for page two\n### Sub title 2.a\nSome more text\n\n\nThen at the end of your post, you call the .toc() function using:\n\n&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;\n$(document).ready(function() {\n    $(&#39;#toc&#39;).toc();\n});\n&amp;lt;/script&amp;gt;\n\n\nHow it would look like\n\n\n\n\n\n\n\n\n"
-} ,
-  
-  {
-    "title"    : "Blogging with title",
+    "title"    : "테스트",
     "category" : "",
     "tags"     : " Test, Ipsum, Markdown, Portfolio",
-    "url"      : "/2013/11/18/blogging-with-title.html",
-    "date"     : "November 18, 2013",
-    "excerpt"  : "I am a BIG title\n\nThis is a very tiny tiny post with less than 250 letters.\n\n",
-  "content"  : "I am a BIG title\n\nThis is a very tiny tiny post with less than 250 letters.\n\n"
-} ,
-  
-  {
-    "title"    : "Tech Stuff example",
-    "category" : "",
-    "tags"     : " Test, Markdown",
-    "url"      : "/2012/01/02/Tech-stuff-example.html",
-    "date"     : "January 2, 2012",
-    "excerpt"  : "Search should be working even for complicated escape symbols\nsed -i &#39;s/\\&quot;hostname\\&quot;\\:.*$/\\&quot;hostname\\&quot;\\: \\&quot;&#39;$IPADDR&#39;\\&quot;\\,/g&#39; open-falcon/agent/config/cfg.json\n\n\nSome tech stuff blog\n\nBecause you might put code in your blog post and you want to make ...",
-  "content"  : "Search should be working even for complicated escape symbols\nsed -i &#39;s/\\&quot;hostname\\&quot;\\:.*$/\\&quot;hostname\\&quot;\\: \\&quot;&#39;$IPADDR&#39;\\&quot;\\,/g&#39; open-falcon/agent/config/cfg.json\n\n\nSome tech stuff blog\n\nBecause you might put code in your blog post and you want to make sure \nit will look good in here.\nAnd that the search function is working!\n\nJava\n\njava example\n\npublic class Demo {\n  private static final String CONSTANT = &quot;String&quot;;\n  private Object o;\n  /**\n   * Creates a new demo.\n   * @param o The object to demonstrate.\n   */\n  public Demo(Object o) {\n    this.o = o;\n    String s = CONSTANT + &quot;Other&quot;;\n    int i = 123;\n  }\n  public static void main(String[] args) {\n    Demo demo = new Demo();\n  }\n}\n\n\nHTML\n\nhtml example\n\nHTML\n&amp;lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2//EN&quot;&amp;gt;\n&amp;lt;!-- Sample comment --&amp;gt;\n&amp;lt;HTML&amp;gt;\n&amp;lt;head&amp;gt;\n&amp;lt;title&amp;gt;IntelliJ IDEA&amp;lt;/title&amp;gt;\n&amp;lt;/head&amp;gt;\n&amp;lt;body&amp;gt;\n  &amp;lt;h1&amp;gt;IntelliJ IDEA&amp;lt;/h1&amp;gt;\n  &amp;lt;p&amp;gt;&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;&amp;lt;IMG border=0 height=12 src=&quot;images/hg.gif&quot; width=18 &amp;gt;\n    Hello&amp;amp;nbsp;World! &amp;amp;#x00B7; &amp;amp;Alpha; &amp;lt;/b&amp;gt;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;\n&amp;lt;/body&amp;gt;\n&amp;lt;/html&amp;gt;\n\n\n\nRuby\n\nruby example\n\nrequire &quot;test&quot;\nCONSTANT = 777\n\n# Sample comment\n\nclass Module::Class\n  include Testcase\n\n  render :action =&amp;gt; &#39;foo&#39;\n  def foo(parameter)\n    @parameter = parameter\n  end\n\n  local_var = eval &amp;lt;&amp;lt;-&quot;FOO&quot;;\\\n  printIndex &quot;Hello world!&quot;\n  And now this is heredoc!\n  printIndex &quot;Hello world again!&quot;\n  FOO\n  foo(&quot;#{$GLOBAL_TIME &amp;gt;&amp;gt; $`} is \\Z sample \\&quot;string\\&quot;&quot; * 777);\n  if ($1 =~ /sample regular expression/ni) then\n  begin\n    puts %W(sample words), CONSTANT, :fooo;\n    do_something :action =&amp;gt; &quot;action&quot;\n  end\n  expect{counter[0]}.to_be eq 1\n  1.upto(@@n) do |index| printIndex &#39;Hello&#39; + index end\n  \\\\\\\\\\\\\\\\\\\n  end\nend\n\n\nYAML\n\nYou can also render some yaml, like this _config.yml:\n\n\n# Welcome to Jekyll!\n#\n# This config file is meant for settings that affect your whole blog, values\n# which you are expected to set up once and rarely edit after that. If you find\n# yourself editing this file very often, consider using Jekyll&#39;s data files\n# feature for the data you need to update frequently.\n#\n# This file, &quot;_config.yml&quot; is *NOT* reloaded automatically when you use\n# &#39;bundle exec jekyll serve&#39;. If you change this file, please restart the server process.\n\n# Site settings\n# These are used to personalize your new site. If you look in the HTML files,\n# you will see them accessed via Type on Strap, , and so on.\n# You can create any custom variable you would like, and they will be accessible\n# in the templates via .\n\n# SITE CONFIGURATION\nbaseurl: &quot;/Type-on-Strap&quot;\nurl: &quot;https://sylhare.github.io&quot;\n\n# THEME-SPECIFIC CONFIGURATION\ntitle: Type on Strap                                    # site&#39;s title\ndescription: &quot;A website with blog posts and pages&quot;      # used by search engines\navatar: assets/img/triangle.png                         # Empty for no avatar in navbar\nfavicon: assets/favicon.ico                             # Icon displayed in the tab\n\nremote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github\n\n"
+    "url"      : "/2020/05/12/test.html",
+    "date"     : "May 12, 2020",
+    "excerpt"  : "테스트 글\n\n테스트 123\n\n",
+  "content"  : "테스트 글\n\n테스트 123\n\n"
 } 
   
   ,
