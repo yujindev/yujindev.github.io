@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-13T01:16:45+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디심기 프로젝트</title><subtitle>초보 개발자의 1일 1커밋을 남기는 기록들입니다.</subtitle><entry><title type="html">200512 오늘의 TIL</title><link href="http://localhost:4000/2020/05/12/TIL.html" rel="alternate" type="text/html" title="200512 오늘의 TIL" /><published>2020-05-12T00:00:00+09:00</published><updated>2020-05-12T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/12/TIL</id><content type="html" xml:base="http://localhost:4000/2020/05/12/TIL.html">&lt;h1 id=&quot;200512-오늘의-til--github-블로그-개설&quot;&gt;200512 오늘의 TIL : github 블로그 개설&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-14T23:53:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디심기 프로젝트</title><subtitle>초보 개발자의 1일 1커밋을 남기는 기록들입니다.</subtitle><entry><title type="html">200514 오늘의 TIL</title><link href="http://localhost:4000/2020/05/14/TIL.html" rel="alternate" type="text/html" title="200514 오늘의 TIL" /><published>2020-05-14T00:00:00+09:00</published><updated>2020-05-14T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/14/TIL</id><content type="html" xml:base="http://localhost:4000/2020/05/14/TIL.html">&lt;h1 id=&quot;200514-오늘의-til--html파일에-js파일-연결하기&quot;&gt;200514 오늘의 TIL : html파일에 js파일 연결하기&lt;/h1&gt;
+
+&lt;h2 id=&quot;오늘-한-일-&quot;&gt;오늘 한 일 👩‍💻&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;js 공부하기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;알게-된-것-&quot;&gt;알게 된 것 📝&lt;/h2&gt;
+
+&lt;h4 id=&quot;async-vs-defer&quot;&gt;📚async vs defer&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;head에 넣는다&lt;/strong&gt;&lt;br /&gt;
+→ 페이지 로딩 속도 느려짐&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;body끝에 넣는다&lt;/strong&gt;&lt;br /&gt;
+→ 사용자가 이미 콘텐츠를 보고 있지만, js에 의존적인 페이지라면 의도하는 바를 실현하기가 어렵다. 서버에서 js를 받고 실행하는 시간이 필요함&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;head + async&lt;/strong&gt;&lt;br /&gt;
+script 값에 async를 선언함&lt;br /&gt;
+async는 boolean이어서 선언하는 것만으로 true로 설정 됨&lt;br /&gt;
+브라우저가 html을 다운받으면서 병렬로 다운받게 된다.&lt;br /&gt;
+다운로드 시간을 절약할 수 있다.&lt;br /&gt;
+js로 조작하려는 요소가 정의되지 않은 상태에서 실현되는 가능성, js를 실현하고 나머지 html를 다운로드하기때문에 여전히 사용자에게는 느리다.&lt;br /&gt;
+✨여러 스크립트를 다운받게 될 경우, 정의 된 스크립트 순서와는 관계없이 다운로드순으로 실행이 된다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;em&gt;head+defer&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+html과 js를 병렬로 동시에 다운받고, html이 다 다운받은 후에 js가 실행된다.
+html을 parsing하는 동안 스크립트들을 병렬적으로 다운로드 한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;use-strict&quot;&gt;📚’use strict’;&lt;/h4&gt;
+
+&lt;p&gt;바닐라 js로 개발할 때는 js파일 &lt;strong&gt;&lt;em&gt;맨 위에 ‘use strict’을 기재할 것&lt;/em&gt;&lt;/strong&gt;&lt;br /&gt;
+js는 굉장히 유연하다. → 때로는 위험하다. → 실수 확률이 높다.  
+선언되지 않은 변수에 값을 할당한다던가 기존의 프로토타입을 변경등의 비상식적인 것들을 쓰지 않도록 해준다. → 에러를 확인이 가능하다.&lt;br /&gt;
+js엔진이 효율적으로 js를 확인할 수 있어 성능 발전도 할 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;회고-&quot;&gt;회고 🌿&lt;/h2&gt;
+
+&lt;p&gt;지금까지 스크립트를 걸때는 바디 끝에만 걸었었는데 async와 defer라는 새로운 방법을 알게 되었다. 기존에 배포했었던 페이지가 너무 무거워서 js 걸었던 것들을 다 지웠었던 것을 생각하면 아깝기도 하고, 그 때 오늘 안 것을 알았다면 어느정도 속도가 높아졌을까 라는 생각이 든다. 웹 페이지는 로딩싸움이기 때문에 더 빨리 더 가볍게! 라는 것에 집중하고 있다. 오늘의 배움을 발판으로 삼아 현명하게 코드를 짤 수 있는 사람이 되어야겠다고 다짐한다.&lt;/p&gt;</content><author><name></name></author><category term="TIL" /><category term="2020" /><category term="js" /><summary type="html">200514 오늘의 TIL : html파일에 js파일 연결하기</summary></entry><entry><title type="html">200513 오늘의 TIL</title><link href="http://localhost:4000/2020/05/13/TIL.html" rel="alternate" type="text/html" title="200513 오늘의 TIL" /><published>2020-05-13T00:00:00+09:00</published><updated>2020-05-13T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/13/TIL</id><content type="html" xml:base="http://localhost:4000/2020/05/13/TIL.html">&lt;h1 id=&quot;200513-오늘의-til--git-잔디-안심어지는-문제-해결&quot;&gt;200513 오늘의 TIL : git 잔디 안심어지는 문제 해결&lt;/h1&gt;
+
+&lt;h2 id=&quot;오늘-한-일-&quot;&gt;오늘 한 일 👩‍💻&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;커밋을 해도 컨트리뷰션에 적용이 안되는 문제 해결&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;git config 설정 문제&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;마크다운 작성법 알아가기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;알게-된-것-&quot;&gt;알게 된 것 📝&lt;/h2&gt;
+
+&lt;h4 id=&quot;git-commit을-해도-적용이-되지-않았을-때는-config-설정을-확인하자&quot;&gt;📚git commit을 해도 적용이 되지 않았을 때는 config 설정을 확인하자.&lt;/h4&gt;
+
+&lt;p&gt;어제도 오늘도 모든 원인과 해결이 config에 있었다. 이전까지 잘 커밋하고 푸쉬해왔었는데 갑자기 안되서 당황했다. 특히 깃헙블로그 자체가 업데이트되어도 갱신이 되지않아 깃헙블로그는 컨트리뷰션에 적용되지 않는 예외 같은것인가라고 짐작했는데, 이 리포지토리에는 git config가 제대로 설정 되지 않았던 것 같다.&lt;/p&gt;
+
+&lt;h2 id=&quot;회고-&quot;&gt;회고 🌿&lt;/h2&gt;
+
+&lt;p&gt;짐작하지 말고 모르면 확인 할 것이라는 생각이 든다.&lt;br /&gt;
+config 설정이 제대로 ‘아마 ~하겠지’라는 생각은 위험하다는 것을 깨달았다.
+짐작하지 말고 확인 할 것!&lt;/p&gt;</content><author><name></name></author><category term="TIL" /><category term="Markdown" /><category term="2020" /><category term="git" /><summary type="html">200513 오늘의 TIL : git 잔디 안심어지는 문제 해결</summary></entry><entry><title type="html">200512 오늘의 TIL</title><link href="http://localhost:4000/2020/05/12/TIL.html" rel="alternate" type="text/html" title="200512 오늘의 TIL" /><published>2020-05-12T00:00:00+09:00</published><updated>2020-05-12T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/12/TIL</id><content type="html" xml:base="http://localhost:4000/2020/05/12/TIL.html">&lt;h1 id=&quot;200512-오늘의-til--github-블로그-개설&quot;&gt;200512 오늘의 TIL : github 블로그 개설&lt;/h1&gt;
 
 &lt;h2 id=&quot;오늘-한-일-&quot;&gt;오늘 한 일 👩‍💻&lt;/h2&gt;
 &lt;ol&gt;
