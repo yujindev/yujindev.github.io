@@ -1,0 +1,144 @@
+I"g<h1 id="200514-오늘의-til--html파일에-js파일-연결하기">200514 오늘의 TIL : html파일에 js파일 연결하기</h1>
+
+<h2 id="오늘-한-일-">오늘 한 일 👩‍💻</h2>
+
+<ol>
+  <li>js 공부하기</li>
+</ol>
+
+<h2 id="알게-된-것-">알게 된 것 📝</h2>
+
+<h3 id="variable">📚variable</h3>
+
+<h4 id="let-es6에서-추가--값을-변할-수-있는-변수-mutable">📖let (es6에서 추가) : 값을 변할 수 있는 변수 (mutable)</h4>
+
+<p>block scope {}</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">block scope 안</th>
+      <th style="text-align: center">block scope 밖</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">블럭 밖에서는 블럭 안의 내용을 알 수 없게 됨</td>
+      <td style="text-align: center">global scope 어느 곳에서나 출력 가능</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">안에 쓴 코드만 실행 가능</td>
+      <td style="text-align: center">어플리케이션이 실행부터 끝날때까지 쓴다.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td>class,함수 같은 필요한 부분에서만 사용하는 것이 좋음</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>❌var는 더 이상 쓰지 않는다❌</strong></p>
+
+<p><strong>(why)</strong></p>
+
+<ol>
+  <li>
+    <p>선언 전에 값을 할당하여 출력이 가능해서 var hosting이 가능하다.</p>
+
+    <ul>
+      <li>var hosting : 어디에 선언했는지 상관없이 제일 위로 끌어 올려주는 것.</li>
+    </ul>
+  </li>
+  <li>
+    <p>block scope 무시</p>
+    <ul>
+      <li>블럭 안에 var를 선언해도 블럭 밖에서 선언하면 출력이 된다.</li>
+    </ul>
+  </li>
+</ol>
+
+<h4 id="constants-immutable">📖constants (immutable)</h4>
+
+<p>값을 선언함과 동시에 절대 다시는 값을 변경할 수 없다.</p>
+
+<ol>
+  <li>보안상의 이유</li>
+</ol>
+
+<ul>
+  <li>해커들이 값을 변경하는 것을 막을 수 있음</li>
+</ul>
+
+<ol>
+  <li>어플리케이션 실행 → 하나의 프로세스 할당 → 어플리케이션이 빠르게 돌아가도록 다양한 스레드가 동시에 변수에 접근하여 값을 변경할 수 있다. 👉위험!!</li>
+</ol>
+
+<p>3) 실수 방지</p>
+
+<h4 id="variable-types">📖variable types</h4>
+
+<p>primate type : 더 이상 작은 단위로 나눠지지 않는 한가지 아이템 number,boolean,null,undefiend,symbol
+object type : 싱글 아이템을 묶어서 단위로 관리할 수 있도록 해주는 것 box container
+function : function도 데이터 타입중 하나</p>
+
+<ul>
+  <li>first-class function :프로그래밍에서 다른 데이터타입처럼 변수에 할당이 가능, 함수에 parameter로 전달 가능 , return 타입으로 return하는 것이 가능</li>
+</ul>
+
+<h3 id="number">📚number</h3>
+
+<p>다른 언어에서는 데이터의 사이즈에 따라 int,long등의 변수를 넣어야 하는데 js에서는 <strong>number</strong>로 가능하다. 타입이 다양하게 결정되므로 number라고 선언하지 않아도 된다.<br />
+specific numeric number: infinity,-infinity,Nan<br />
+const infinity = 1/0; 👉infinity:양수를 0으로 나누면 무한대의 숫자값이 생기는 것<br />
+const negativeinfinity = -1/0; 👉negative infinity: 음수를 0으로 나누면 무한대의 음수 숫자값이 생기는 것<br />
+const nAn = ‘not a number’/0; 👉nAn: 숫자가 아닌 스트링 값을 숫자로 나누었을때 생긴다.</p>
+
+<p>👉중요한 이유 :돔 요소로 포지션을 바꾸거나 할때 나누고자 하는 값이 0인지 아닌지, 숫자인지 아닌지 연산을 해버리면 위의 3가지 항목이 나타나 사용자에게 에러가 발생한다. 항상 연산할때 varild한 값인지를 확인하고 연산하는 것이 중요하다.</p>
+
+<h4 id="참고">👀참고</h4>
+
+<p>big int : 기존의 number가 표현할 수 있던 제한적인 값만 가능한데, 그 값 이상을 사용하기 위한 것<br />
+숫자 뒤에 n을 붙이면 bigint가 된다. 다만, 현재는 크롬,ff만 적용이 되므로 아직까지는 흔하게 쓰이지 않을듯..</p>
+
+<h3 id="string">📚string</h3>
+
+<p>한 가지 글자던, 여러 개의 글자 던 string타입으로 할당이 된다. 일반 스트링과 기호로 스트링 연결도 가능!
+template literals (string) 백틱을 이용해 스트링을 연결하는 것
+ex)</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">helloBob</span> <span class="o">=</span> <span class="s2">`hi </span><span class="p">${</span><span class="nx">brendan</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="p">(</span><span class="s2">`value:</span><span class="p">${</span><span class="nx">helloBob</span><span class="p">}</span><span class="s2">, type : </span><span class="p">${</span><span class="nx">typeOf</span> <span class="nx">helloBob</span><span class="p">}</span><span class="s2">`</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>null/undefiend
+null 값이 없음<br />
+undefiend 선언 되었지만 값이 지정되어 있지 않음</p>
+
+<h3 id="symbol">📚symbol</h3>
+
+<p>고유한 식별자가 필요하거나, 우선순위를 주고 싶을 때 사용.<br />
+심볼은 동일한 값을 지정했어도, 다른 심볼로 만들어지기 때문에 주어지는 스트링에 상관없이 고유한 식별자로 사용됨</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">symbol1</span> <span class="o">=</span> <span class="nb">Symbol</span><span class="p">(</span><span class="dl">'</span><span class="s1">id);
+const symbol2 = Symbol(</span><span class="dl">'</span><span class="nx">id</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sybmol1</span><span class="o">===</span><span class="nx">symbol2</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>👉false
+동일한 symbol을 만들고 싶을때는 <strong>Symbol.for(‘id’)</strong>를 사용한다. 주어진 스트링에 맞는 심볼을 만들어 달라는 뜻</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">gSymbol1</span> <span class="o">=</span> <span class="nb">Symbol</span><span class="p">.</span><span class="k">for</span><span class="p">(</span><span class="dl">'</span><span class="s1">id);
+const gSymbol2 = Symbol.for(</span><span class="dl">'</span><span class="nx">id</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sybmol1</span><span class="o">===</span><span class="nx">symbol2</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>👉true
+심볼은 그냥 출력하면 에러가 뜨므로 <strong>.description</strong>으로 스트링으로 변환하기
+<code class="highlighter-rouge">console.log(value: symbol${symbol1.description},${typeOf symbol1});</code></p>
+
+<h2 id="회고-">회고 🌿</h2>
+:ET
