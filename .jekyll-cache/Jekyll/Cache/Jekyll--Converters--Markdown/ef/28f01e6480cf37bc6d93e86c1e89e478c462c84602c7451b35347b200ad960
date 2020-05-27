@@ -1,0 +1,61 @@
+I"u	<h1 id="200527-오늘의-til--웹사이트와-웹앱">200527 오늘의 TIL : 웹사이트와 웹앱</h1>
+
+<h2 id="오늘-한-일-">오늘 한 일 👩‍💻</h2>
+
+<ol>
+  <li>노마드 코더 강의 듣기</li>
+  <li>회사 발표 자료 작성하기</li>
+  <li>웹 표준 관련 조사하기</li>
+</ol>
+
+<h2 id="알게-된-것-">알게 된 것 📝</h2>
+
+<h3 id="-웹-사이트와-웹-어플리케이션의-차이점">📚 웹 사이트와 웹 어플리케이션의 차이점</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">웹사이트</th>
+      <th style="text-align: center">웹 어플리케이션</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">정보 제공만 가능 (쌍방향)</td>
+      <td style="text-align: center">정보 제공을 포함하여 방문자도 무언가를 해야할 때 (양방향) ex) <br />사용자 계정, 반응, 사용자 지정, CRM 통합</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">html,css,js로 구성</td>
+      <td style="text-align: center">ASP,JSP,PHP 같은 서버 사이드 스크립트 언어가 필요하다. angular,mern로 구현</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p>웹 앱은 유저이탈을 막을 수 있다.
+(why)</p>
+
+    <ol>
+      <li>웹 앱을 통해 유저에게 푸시 알람 요청을 할 수 있음 👉서비스 업데이트에 유저를 부를 수 있다</li>
+      <li>모바일 앱 개발하지 않아도 모바일 앱의 기능을 웹 브라우저상에서도 거의 동일하게 실현이 가능하다. (예산절감)</li>
+      <li>모바일 앱처럼 직접 기기에 접근 허용등을 요청하지 않기 때문에 보안 면에서 모바일 앱보다 좋다.</li>
+      <li>개인 맞춤형 서비스 제공이 가능하다 ex) 아마존, 스포티파이에서 사용자 화면을 권장사항으로 확산
+5.</li>
+    </ol>
+  </li>
+</ul>
+
+<h4 id="-let-es6에서-추가--값을-변할-수-있는-변수-mutable">📖 let (es6에서 추가) : 값을 변할 수 있는 변수 (mutable)</h4>
+
+<h4 id="-참고">👀 참고</h4>
+
+<h2 id="회고-">회고 🌿</h2>
+
+<p>안다고 말하는 것은 정말 쉬운 것이 아니라고 깨닫는 요즘, 회사일이란 핑계로 하지 않았던 공부를 다시 재개!
+지속성의 힘을 믿자…!</p>
+:ET

@@ -1,4 +1,227 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-21T11:47:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디심기 프로젝트</title><subtitle>초보 개발자의 1일 1커밋을 남기는 기록들입니다.</subtitle><entry><title type="html">200519 오늘의 TIL</title><link href="http://localhost:4000/2020/05/19/TIL.html" rel="alternate" type="text/html" title="200519 오늘의 TIL" /><published>2020-05-19T00:00:00+09:00</published><updated>2020-05-19T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/19/TIL</id><content type="html" xml:base="http://localhost:4000/2020/05/19/TIL.html">&lt;h1 id=&quot;200519-오늘의-til--데이터-타입과-변수&quot;&gt;200519 오늘의 TIL : 데이터 타입과 변수&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-05-28T02:18:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">잔디심기 프로젝트</title><subtitle>초보 개발자의 1일 1커밋을 남기는 기록들입니다.</subtitle><entry><title type="html">200527 오늘의 TIL</title><link href="http://localhost:4000/2020/05/26/TIL.html" rel="alternate" type="text/html" title="200527 오늘의 TIL" /><published>2020-05-26T00:00:00+09:00</published><updated>2020-05-26T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/26/TIL</id><content type="html" xml:base="http://localhost:4000/2020/05/26/TIL.html">&lt;h1 id=&quot;200527-오늘의-til--웹사이트와-웹앱&quot;&gt;200527 오늘의 TIL : 웹사이트와 웹앱&lt;/h1&gt;
+
+&lt;h2 id=&quot;오늘-한-일-&quot;&gt;오늘 한 일 👩‍💻&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;노마드 코더 강의 듣기&lt;/li&gt;
+  &lt;li&gt;회사 발표 자료 작성하기&lt;/li&gt;
+  &lt;li&gt;웹 표준 관련 조사하기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;알게-된-것-&quot;&gt;알게 된 것 📝&lt;/h2&gt;
+
+&lt;h3 id=&quot;-웹-사이트와-웹-어플리케이션의-차이점&quot;&gt;📚 웹 사이트와 웹 어플리케이션의 차이점&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;웹사이트&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;웹 어플리케이션&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정보 제공만 가능 (쌍방향)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;정보 제공을 포함하여 방문자도 무언가를 해야할 때 (양방향) ex) &lt;br /&gt;사용자 계정, 반응, 사용자 지정, CRM 통합&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;html,css,js로 구성&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;ASP,JSP,PHP 같은 서버 사이드 스크립트 언어가 필요하다. angular,mern로 구현&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;웹 앱은 유저이탈을 막을 수 있다.&lt;br /&gt;
+&lt;strong&gt;(why)&lt;/strong&gt;
+    &lt;ol&gt;
+      &lt;li&gt;웹 앱을 통해 유저에게 푸시 알람 요청을 할 수 있음 👉서비스 업데이트에 유저를 부를 수 있다&lt;/li&gt;
+      &lt;li&gt;모바일 앱 개발하지 않아도 모바일 앱의 기능을 웹 브라우저상에서도 거의 동일하게 실현이 가능하다. (예산절감)&lt;/li&gt;
+      &lt;li&gt;모바일 앱처럼 직접 기기에 접근 허용등을 요청하지 않기 때문에 보안 면에서 모바일 앱보다 좋다.&lt;/li&gt;
+      &lt;li&gt;개인 맞춤형 서비스 제공이 가능하다 ex) 아마존, 스포티파이에서 사용자 화면을 권장사항으로 확산&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;pwa--progressive-web-apps&quot;&gt;📖PWA ( Progressive Web Apps)&lt;/h4&gt;
+
+&lt;p&gt;웹 브라우저에서 실행되는 웹 응용 프로그램. 구글에서 밀어주고 있다. seo 친화적, 반응형 디자인 적용되어 있음&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;오프라인 작업 가능해 데이터 사용량이 낮다.&lt;/li&gt;
+  &lt;li&gt;푸시 알림과 디바이스의 화면에 아이콘이 있어 유저들의 접근을 높여준다.&lt;/li&gt;
+  &lt;li&gt;보안이 좋다 : https로 연결이 되고, 웹 url로만 접근하면 된다. (기존의 네이티브 앱의 경우 설치 시간이 걸려 유저들이 이탈하게 됨)&lt;/li&gt;
+  &lt;li&gt;로딩시간이 빠르다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;-참고&quot;&gt;👀 참고&lt;/h4&gt;
+
+&lt;h2 id=&quot;회고-&quot;&gt;회고 🌿&lt;/h2&gt;
+
+&lt;p&gt;i사를 다녔을 적, t씨가 pwa 작업을 테스트로 실행해 줬으면 좋겠다는 요청이 있어 실제 작업을 3일 정도 하였다. 역시 밑빠진 독에 물붓기였고 어디서 부터 문제인지 종잡을 수가 없었다. 아무리 튜토리얼을 읽어도 공식문서가 아니여서 정식은 아니었고, 공식문서를 읽으면 밀려오는 딱딱함과 오직 영어로만 적힌 글자들에 혼란이 가미되었다. 여러 안건들의 스케쥴로 인해 pwa 테스트 환경 구축은 일단락 되었고, 웹 브라우저와 웹 어플리케이션에 대해 공부하는 지금에서야 이렇게 다시 개념을 적게 되었다. ‘one signal’이 대표적인 pwa인 것 같다. 워드프레스 확장프로그램으로 있어서 비교적 간단하게 이용이 가능하지만 나온지 얼마 되지 않아서 자료가 많지 않은 것이 흠이라면 흠..&lt;/p&gt;</content><author><name></name></author><category term="TIL" /><category term="2020" /><category term="web site" /><category term="PWA" /><summary type="html">200527 오늘의 TIL : 웹사이트와 웹앱</summary></entry><entry><title type="html">200521 오늘의 TIL</title><link href="http://localhost:4000/2020/05/21/TIL.html" rel="alternate" type="text/html" title="200521 오늘의 TIL" /><published>2020-05-21T00:00:00+09:00</published><updated>2020-05-21T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/21/TIL</id><content type="html" xml:base="http://localhost:4000/2020/05/21/TIL.html">&lt;h1 id=&quot;200521-오늘의-til--데이터-타입과-변수&quot;&gt;200521 오늘의 TIL : 데이터 타입과 변수&lt;/h1&gt;
+
+&lt;h2 id=&quot;오늘-한-일-&quot;&gt;오늘 한 일 👩‍💻&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;js 공부하기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;알게-된-것-&quot;&gt;알게 된 것 📝&lt;/h2&gt;
+
+&lt;h3 id=&quot;-variable&quot;&gt;📚 variable&lt;/h3&gt;
+
+&lt;h4 id=&quot;-let-es6에서-추가--값을-변할-수-있는-변수-mutable&quot;&gt;📖 let (es6에서 추가) : 값을 변할 수 있는 변수 (mutable)&lt;/h4&gt;
+
+&lt;p&gt;block scope {}&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;block scope 안&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;block scope 밖&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;블럭 밖에서는 블럭 안의 내용을 알 수 없게 됨&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;global scope 어느 곳에서나 출력 가능&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;안에 쓴 코드만 실행 가능&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;어플리케이션이 실행부터 끝날때까지 쓴다.&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td&gt;class,함수 같은 필요한 부분에서만 사용하는 것이 좋음&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;strong&gt;❌var는 더 이상 쓰지 않는다❌&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;(why)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;선언 전에 값을 할당하여 출력이 가능해서 var hosting이 가능하다.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;var hosting : 어디에 선언했는지 상관없이 제일 위로 끌어 올려주는 것.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;block scope 무시&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;블럭 안에 var를 선언해도 블럭 밖에서 선언하면 출력이 된다.
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;-constants-immutable&quot;&gt;📖 constants (immutable)&lt;/h4&gt;
+
+&lt;p&gt;값을 선언함과 동시에 절대 다시는 값을 변경할 수 없다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;보안상의 이유&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;해커들이 값을 변경하는 것을 막을 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;어플리케이션 실행 → 하나의 프로세스 할당 &lt;br /&gt; → 어플리케이션이 빠르게 돌아가도록 다양한 스레드가 동시에 변수에 접근하여 값을 변경할 수 있다. 👉위험!!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;3) 실수 방지
+   &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;-variable-types&quot;&gt;📖 variable types&lt;/h4&gt;
+
+&lt;p&gt;primate type : 더 이상 작은 단위로 나눠지지 않는 한가지 아이템 number,boolean,null,undefiend,symbol
+object type : 싱글 아이템을 묶어서 단위로 관리할 수 있도록 해주는 것 box container
+function : function도 데이터 타입중 하나&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;first-class function :프로그래밍에서 다른 데이터타입처럼 변수에 할당이 가능, 함수에 parameter로 전달 가능 , return 타입으로 return하는 것이 가능
+&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;-number&quot;&gt;📚 number&lt;/h3&gt;
+
+&lt;p&gt;다른 언어에서는 데이터의 사이즈에 따라 int,long등의 변수를 넣어야 하는데 js에서는 &lt;strong&gt;number&lt;/strong&gt;로 가능하다. 타입이 다양하게 결정되므로 number라고 선언하지 않아도 된다.&lt;br /&gt;
+specific numeric number: infinity,-infinity,Nan&lt;br /&gt;
+const infinity = 1/0; 👉infinity:양수를 0으로 나누면 무한대의 숫자값이 생기는 것&lt;br /&gt;
+const negativeinfinity = -1/0; 👉negative infinity: 음수를 0으로 나누면 무한대의 음수 숫자값이 생기는 것&lt;br /&gt;
+const nAn = ‘not a number’/0; 👉nAn: 숫자가 아닌 스트링 값을 숫자로 나누었을때 생긴다.&lt;/p&gt;
+
+&lt;p&gt;👉중요한 이유 :돔 요소로 포지션을 바꾸거나 할때 나누고자 하는 값이 0인지 아닌지, 숫자인지 아닌지 연산을 해버리면 위의 3가지 항목이 나타나 사용자에게 에러가 발생한다. 항상 연산할때 varild한 값인지를 확인하고 연산하는 것이 중요하다.&lt;/p&gt;
+
+&lt;h4 id=&quot;-참고&quot;&gt;👀 참고&lt;/h4&gt;
+
+&lt;p&gt;big int : 기존의 number가 표현할 수 있던 제한적인 값만 가능한데, 그 값 이상을 사용하기 위한 것&lt;br /&gt;
+숫자 뒤에 n을 붙이면 bigint가 된다. 다만, 현재는 크롬,ff만 적용이 되므로 아직까지는 흔하게 쓰이지 않을듯..
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-string&quot;&gt;📚 string&lt;/h3&gt;
+
+&lt;p&gt;한 가지 글자던, 여러 개의 글자 던 string타입으로 할당이 된다. 일반 스트링과 기호로 스트링 연결도 가능!
+template literals (string) 백틱을 이용해 스트링을 연결하는 것
+ex)&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;helloBob&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;`hi &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;brendan&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`value:&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;helloBob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, type : &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;typeOf&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;helloBob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;null/undefiend
+null 값이 없음&lt;br /&gt;
+undefiend 선언 되었지만 값이 지정되어 있지 않음&lt;/p&gt;
+
+&lt;h3 id=&quot;-symbol&quot;&gt;📚 symbol&lt;/h3&gt;
+
+&lt;p&gt;고유한 식별자가 필요하거나, 우선순위를 주고 싶을 때 사용.&lt;br /&gt;
+심볼은 동일한 값을 지정했어도, 다른 심볼로 만들어지기 때문에 주어지는 스트링에 상관없이 고유한 식별자로 사용됨&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;symbol1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;symbol2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sybmol1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;symbol2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;👉false
+동일한 symbol을 만들고 싶을때는 &lt;strong&gt;Symbol.for(‘id’)&lt;/strong&gt;를 사용한다. 주어진 스트링에 맞는 심볼을 만들어 달라는 뜻&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gSymbol1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gSymbol2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sybmol1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;symbol2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;👉true
+심볼은 그냥 출력하면 에러가 뜨므로 &lt;strong&gt;.description&lt;/strong&gt;으로 스트링으로 변환하기&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`value: symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;symbol1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;typeOf&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;symbol1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;-dynamic-typing--dynamically-typed-language&quot;&gt;📚 Dynamic typing : dynamically typed language&lt;/h3&gt;
+
+&lt;p&gt;c언어와 java는 변수를 선언할때 어떤 타입인지 결정하여 타입을 같이 선언&lt;br /&gt;
+js는 프로그램이 run할때 어떤 타입인지 할당된 값에 따라 브라우저에서 타입이 변화 됨.&lt;/p&gt;
+
+&lt;p&gt;선언한 변수를 따로 확인할 수 있기 때문..&lt;/p&gt;
+
+&lt;h2 id=&quot;회고-&quot;&gt;회고 🌿&lt;/h2&gt;
+
+&lt;p&gt;안다고 말하는 것은 정말 쉬운 것이 아니라고 깨닫는 요즘, 회사일이란 핑계로 하지 않았던 공부를 다시 재개!
+지속성의 힘을 믿자…!&lt;/p&gt;</content><author><name></name></author><category term="TIL" /><category term="2020" /><category term="js" /><summary type="html">200521 오늘의 TIL : 데이터 타입과 변수</summary></entry><entry><title type="html">200519 오늘의 TIL</title><link href="http://localhost:4000/2020/05/19/TIL.html" rel="alternate" type="text/html" title="200519 오늘의 TIL" /><published>2020-05-19T00:00:00+09:00</published><updated>2020-05-19T00:00:00+09:00</updated><id>http://localhost:4000/2020/05/19/TIL</id><content type="html" xml:base="http://localhost:4000/2020/05/19/TIL.html">&lt;h1 id=&quot;200519-오늘의-til--데이터-타입과-변수&quot;&gt;200519 오늘의 TIL : 데이터 타입과 변수&lt;/h1&gt;
 
 &lt;h2 id=&quot;오늘-한-일-&quot;&gt;오늘 한 일 👩‍💻&lt;/h2&gt;
 
