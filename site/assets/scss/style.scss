@@ -1,0 +1,50 @@
+@import "./color.scss";
+@import "./common.scss";
+/* ================== style css ================== */
+$font-large: 3rem;
+$font-medium: 1.6rem;
+$font-default: 1.2rem;
+$font-small: 0.8rem;
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex-box {
+  display: flex;
+}
+
+// .pc-flex-box {
+//   display: flex;
+// }
+
+.bg-gray50{
+  background: $gray50;
+}
+
+.card {
+  .card-con {
+    border-radius: 15px;
+
+    .card-text {
+      li {
+        color: $gray400;
+      }
+      .con {
+        color: $gray500;
+      }
+    }
+  }
+  .card-notice {
+    background-color: $color-main;
+  }
+  .card-text {
+    li {
+      color: $gray50;
+    }
+    .con {
+      color: $gray500;
+    }
+  }
+}
