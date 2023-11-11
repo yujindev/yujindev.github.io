@@ -21,6 +21,7 @@
 
 body {
   font-family: 'Noto sans', sans-serif;
+  margin: 0;
 }
 
 h1,h2,h3,p,ul {
@@ -44,4 +45,51 @@ button {
 
 button:focus {
   outline: 1px solid var(--color-accent);
+}
+
+/* header */
+.header {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__logo__img {
+  width: 36px;
+  height: 36px;
+  background-color: pink;
+}
+
+.header__logo__title {
+  font-size: 1.8rem;
+}
+
+.header__menu {
+  display: flex;
+  gap: 4px;
+}
+
+.header__menu__item {
+  padding: 8px 16px;
+}
+
+.header__menu__item:hover {
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.header__menu__item.active {
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
 }
