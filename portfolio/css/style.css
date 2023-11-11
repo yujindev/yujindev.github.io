@@ -376,3 +376,39 @@ button:focus {
   height: 2px;
   background-color: var(--color-accent);
 }
+
+/* Testimonial */
+
+.testimonial {
+  margin: 3rem;
+}
+
+.testimonial {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem9;
+}
+
+.testimonial:nth-child(even) .testimonial__img {
+  order: 1;
+}
+
+.testimonial__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.testimonial__bubble__name {
+  color: var(--color-accent);
+  font-weight: bold;
+  filter: brightness(70%);
+}
