@@ -47,6 +47,22 @@ button:focus {
   outline: 1px solid var(--color-accent);
 }
 
+/* commmon */
+.section {
+  padding: 4rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin: .5rem 0;
+}
+
 /* header */
 .header {
   background-color: #000;
@@ -94,7 +110,6 @@ button:focus {
   border-radius: 4px;
 }
 
-/* main */
 
 /* home */
 #home {
@@ -140,3 +155,5 @@ button:focus {
   color: var(--color-text);
   outline: 2px solid var(--color-accent);
 }
+
+/* About */
