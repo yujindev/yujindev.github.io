@@ -354,6 +354,12 @@ button:focus {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  transition: all 250ms ease-in;
+}
+
+.projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
 }
 
 .project {
