@@ -99,7 +99,7 @@ button:focus {
 .header__logo__img {
   width: 36px;
   height: 36px;
-  background-color: pink;
+  border-radius: 50px;
 }
 
 .header__logo__title {
