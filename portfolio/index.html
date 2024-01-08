@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yujin&#39;s portfolio</title>
+  <meta name="decription" content="김유진의 포트폴리오">  
+  <meta name="author" content="김유진">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+  <!-- og:data -->
+  <meta property="og:title" content="유진의 포트폴리오">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="배포 후 수정 url">
+  <meta property="og:image" content="배포 후 수정 url">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/8206c96331.js" crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- js -->
+  <script type="module" src="src/main.js" defer></script>
+  <script type="module" src="src/projects.js" defer></script>
+  <script type="module" src="src/active_menu.js" defer></script>
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header__logo">
+      <img src="images/logo.png" alt="logo" class="header__logo__img">
+      <h1 class="header__logo__title"><a href="#">Yujin</a></h1>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a class="header__menu__item active" href="#home">Home</a></li>
+        <li><a class="header__menu__item" href="#about">About</a></li>
+        <li><a class="header__menu__item" href="#skills">Skills</a></li>
+        <li><a class="header__menu__item" href="#work">My Work</a></li>
+        <li><a class="header__menu__item" href="#testimonial">Testimonial</a></li>
+        <li><a class="header__menu__item" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="header__toggle" aria-label="navigation menu toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </header>
+  <!-- main -->
+  <main>
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img class="home__avatar" src="images/img.png" alt="증명사진">
+        <h2 class="home__title">하루하루 성장하는 <strong class="home__title--strong">김유진</strong></h2>
+        <p class="home__description">나의 강점이 되는 문구 쓰기</p>
+        <a class="home__contact" href="#contact">Contact Me</a>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="section max-container">
+      <h2 class="title">About me</h2>
+      <p class="description">가장 나를 어필할 수 있는 글. 내세울 수 있는 것. 내가 가지고 있는 스킬 3가지, 경력작성</p>
+      <ul class="majors">
+        <li class="major">
+          <i class="fa-brands fa-html5 major__icon"></i>
+          <p class="major__title">FE</p>
+          <p>했던일 했던일 텍스트 텍스트 텍스트</p>
+        </li>
+        <li class="major">
+          <i class="fa-solid fa-mobile major__icon"></i>
+          <p class="major__title">mobile</p>
+          <p>했던일 했던일 텍스트 텍스트 텍스트</p>
+        </li>
+        <li class="major">
+          <i class="fa-brands fa-js major__icon"></i>
+          <p class="major__title">js</p>
+          <p>했던일 했던일 텍스트 텍스트 텍스트</p>
+        </li>
+      </ul>
+      <ul class="jobs">
+        <li class="job">
+          <img class="job__img" src="images/jobs/kovan_org.png" alt="kovan logo">
+          <div>
+            <p class="job__name">주식회사 코밴 - 시소나크연구소 GT기획팀 연구원</p>
+            <p class="job__period">2021.12 - 2023.04</p>
+          </div>
+        </li>
+        <li class="job">
+          <img class="job__img" src="images/jobs/iyell-logo.png" alt="iyell logo">
+          <div>
+            <p class="job__name">iYell 주식회사 (일본 도쿄소재) - 단도리 테크놀로지부 프론트엔드 엔지니어 </p>
+            <p class="job__period">2020.03 - 2023.04</p>
+          </div>
+        </li>
+        <li class="job">
+          <img class="job__img" src="images/jobs/idea-logo.svg" alt="idea logo">
+          <div>
+            <p class="job__name">이데아 레코드 (일본 도쿄소재) - 클라우드 솔루션 사업부 프론트엔드 엔지니어</p>
+            <p class="job__period">2018.06 - 202021.12</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="max-container">
+        <h2 class="title">My Skills</h2>
+        <p class="description">Skills & Attributes</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum itaque eveniet repudiandae atque sint nobis quibusdam suscipit deleniti ex velit provident officiis unde repellat, voluptate quisquam voluptatum hic commodi iusto.
+        </p>
+        <div class="skills">
+          <section class="skills__coding" >
+            <h3 class="skills__title">Coding Skills</h3>
+            <ul>
+              <lsi class="bar">
+                <div class="bar__metadata"><span>HTML</span><span>98%</span></div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+              </lsi>
+              <lsi class="bar">
+                <div class="bar__metadata"><span>CSS</span><span>90%</span></div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+              </lsi>
+              <lsi class="bar">
+                <div class="bar__metadata"><span>JavaScript</span><span>90%</span></div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+              </lsi>
+              <lsi class="bar">
+                <div class="bar__metadata"><span>TypeScript</span><span>90%</span></div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+              </lsi>
+              <lsi class="bar">
+                <div class="bar__metadata"><span>React</span><span>90%</span></div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+              </lsi>
+            </ul>
+          </section>
+          <section class="skills__tools" >
+            <h3 class="skills__title">Tools</h3>
+            <ul>
+              <li>Visual Studio Code9</li>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+            </ul>
+          </section>
+          <section class="skills__etc" >
+            <h3 class="skills__title">Etc</h3>
+            <ul>
+              <li>Git</li>
+              <li>Japanese</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section">
+      <div class="max-container">
+        <h2 class="title">My Work</h2>
+        <p class="description">Projects</p>
+        <ul class="categories">
+          <li><button class="category category--selected" data-category="all">All <span class="category__count">5</span></button></li>
+          <li><button class="category" data-category="publish">All>Publish <span class="category__count">2</span></button></li>
+          <li><button class="category" data-category="mobile">All>mobile <span class="category__count">3</span></button></li>
+        </ul>
+        <ul class="projects">
+          <li class="project" data-type="publish">
+            <a href="#" target="_blank">
+              <img src="images/projects/project1.jpg" alt="project1" class="project__img">
+              <div class="project__metadata">
+                <h3 class="project__title">Project #1</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li class="project" data-type="mobile">
+            <a href="#" target="_blank">
+              <img src="images/projects/project2.jpg" alt="project2" class="project__img">
+              <div class="project__metadata">
+                <h3 class="project__title">Project #2</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li class="project" data-type="publish">
+            <a href="#" target="_blank">
+              <img src="images/projects/project3.jpg" alt="project3" class="project__img">
+              <div class="project__metadata">
+                <h3 class="project__title">Project #3</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li class="project" data-type="mobile">
+            <a href="#" target="_blank">
+              <img src="images/projects/project1.jpg" alt="project4" class="project__img">
+              <div class="project__metadata">
+                <h3 class="project__title">Project #4</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li class="project" data-type="mobile">
+            <a href="#" target="_blank">
+              <img src="images/projects/project2.jpg" alt="project5" class="project__img">
+              <div class="project__metadata">
+                <h3 class="project__title">Project #5</h3>
+                <p>Clone Coding with HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonial" class="section max-container">
+      <h2 class="title">Testimonial</h2>
+      <p class="description">나를 추천하는 글글글</p>
+      <ul class="testimonials">
+        <li class="testimonial">
+          <img src="images/people/people1.jpg" alt="people1" class="testimonial__img">
+          <div class="testimonial__bubble">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus nisi saepe fugit provident recusandae ducimus accusantium et fugiat laudantium tenetur repellat totam quas voluptas nulla veritatis, at vitae illum.</p>
+            <p><a href="#" class="testimonial__bubble__name">홍길동</a>주식회사 가나다</p>
+          </div>
+        </li>
+        <li class="testimonial">
+          <img src="images/people/people2.jpg" alt="people2" class="testimonial__img">
+          <div class="testimonial__bubble">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus nisi saepe fugit provident recusandae ducimus accusantium et fugiat laudantium tenetur repellat totam quas voluptas nulla veritatis, at vitae illum.</p>
+            <p><a href="#" class="testimonial__bubble__name">홍길동</a>주식회사 가나다</p>
+          </div>
+        </li>
+        <li class="testimonial">
+          <img src="images/people/people3.jpg" alt="people3" class="testimonial__img">
+          <div class="testimonial__bubble">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus accusamus nisi saepe fugit provident recusandae ducimus accusantium et fugiat laudantium tenetur repellat totam quas voluptas nulla veritatis, at vitae illum.</p>
+            <p><a href="#" class="testimonial__bubble__name">홍길동</a>주식회사 가나다</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Arrow up -->
+    <aside>
+      <a class="arrow-up" href="#home" title="back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </aside>
+  </main>
+  <!-- footer -->
+  <footer id="contact" class="section">
+    <div class="max-container">
+      <h2 class="title">Let&#39;s talk</h2>
+      <p class="description">yujin.front@gmail.com</p>
+      <ul class="contact__links">
+        <li>
+          <a class="contact__link" href="https://github.com/yujindev" target="_blank" title="my github link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="contact__link" href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" title="my linedkin link">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <p>©Yujin Kim - All rights reserved</p>
+    </div>
+  </footer>
+</body>
+</html>
